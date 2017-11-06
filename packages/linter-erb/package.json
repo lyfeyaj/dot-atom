@@ -1,0 +1,365 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94560-tr30zp.qu102j4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94560-tr30zp.qu102j4i/package.tgz",
+        "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94560-tr30zp.qu102j4i/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117422-94560-295k55.uvqqnz5mi"
+    ]
+  ],
+  "_from": "../d-117422-94560-tr30zp.qu102j4i/package.tgz",
+  "_id": "linter-erb@1.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/linter-erb",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94560-tr30zp.qu102j4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94560-tr30zp.qu102j4i/package.tgz",
+    "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94560-tr30zp.qu102j4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117422-94560-tr30zp.qu102j4i/package.tgz",
+  "_shasum": "10b67b79fc6be1caea77e28dafbb968ab2f2c6fc",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94560-tr30zp.qu102j4i/package.tgz",
+  "_where": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117422-94560-295k55.uvqqnz5mi",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-erb/issues"
+  },
+  "dependencies": {
+    "atom-linter": "^9.0.0",
+    "atom-package-deps": "^4.0.1"
+  },
+  "description": "Linter plugin for ERB, using erb -x",
+  "devDependencies": {
+    "eslint": "^3.13.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "extends": "airbnb-base",
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "node": true
+    }
+  },
+  "homepage": "https://github.com/AtomLinter/linter-erb#readme",
+  "keywords": [
+    "linter",
+    "lint",
+    "erb"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "linter-erb",
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter",
+    "language-ruby"
+  ],
+  "private": true,
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "# linter-erb\n\nThis package will lint your ERB files in Atom by running them through `erb -x`\nand sending the output to `ruby -c` for checking.\n\n## Installation\n\n### Ruby\n\nBefore using this package you will need to have [Ruby][] installed and\navailable from your `$PATH`.\n\n### Plugin installation\n\nThe [Linter][] and package will be installed for you to provide an interface\nto this package. If you are using an alternative debugging interface that\nsupports linter plugins simply disable [Linter][].\n\nIf you do not already have it installed, [language-ruby][] will also be\ninstalled for you.\n\nTo install this package either search for it from within Atom's settings menu\nor run the following command.\n\n```ShellSession\napm install linter-erb\n```\n\n## Settings\n\nAll of linter-erb's settings are available from within Atom's settings menu.\nIf you prefer to manually edit the configuration file the following settings\nare available:\n\n*   `erbExecutablePath`: Defaults to `erb`, allowing the `$PATH` to resolve the\n    correct location. If you need to override this specify the full path to\n    `erb`.\n\n*   `rubyExecutablePath`: Defaults to `ruby`, allowing the `$PATH` to resolve\n    the correct location. If you need to override this specify the full path to\n    `ruby`.\n\n*   `trimMode`: Select the trim mode used by ERB when generating the code\n    before sending off to Ruby for checking. Defaults to `-` for out-of-the-box\n    compatibility with Rails. For a full description of what the options mean\n    see [the documentation][erb-docs].\n\n    _**Note**_: Modes other than `None` _may_ cause the error line numbers to\n    not match the source line numbers.\n\n### Finding the full path\n\nIf you are unsure of the location on your system of a program there are\nutilities you can use to find the full path. For example to find the path to\n`erb` you would run one of the following:\n\n*   On a UNIX / OS X system simply run `which erb` in a terminal. You should\n    get something similar to `/usr/bin/erb`.\n\n*   On Windows run `where.exe erb` in a prompt. You should get back something\n    similar to `C:\\Ruby22\\bin\\erb`.\n\n[linter]: https://github.com/atom-community/linter \"Linter\"\n[language-ruby]: https://github.com/atom/language-ruby \"language-ruby\"\n[ruby]: http://www.ruby-lang.org/ \"Ruby\"\n[erb-docs]: https://docs.oracle.com/cd/E53394_01/html/E54763/erb-1.html\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-erb.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "version": "1.1.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "atom-linter",
+        "version": "9.0.1",
+        "path": "node_modules/atom-linter/lib/index.js"
+      },
+      {
+        "name": "atom-package-deps",
+        "version": "4.6.0",
+        "path": "node_modules/atom-package-deps/lib/index.js"
+      },
+      {
+        "name": "atom-package-path",
+        "version": "1.1.0",
+        "path": "node_modules/atom-package-path/lib/index.js"
+      },
+      {
+        "name": "consistent-env",
+        "version": "1.3.0",
+        "path": "node_modules/consistent-env/lib/index.js"
+      },
+      {
+        "name": "is-utf8",
+        "version": "0.2.1",
+        "path": "node_modules/is-utf8/is-utf8.js"
+      },
+      {
+        "name": "lodash.uniq",
+        "version": "4.5.0",
+        "path": "node_modules/lodash.uniq/index.js"
+      },
+      {
+        "name": "named-js-regexp",
+        "version": "1.3.2",
+        "path": "node_modules/named-js-regexp/lib/named-js-regexp.js"
+      },
+      {
+        "name": "os-tmpdir",
+        "version": "1.0.2",
+        "path": "node_modules/os-tmpdir/index.js"
+      },
+      {
+        "name": "sb-callsite",
+        "version": "1.1.2",
+        "path": "node_modules/sb-callsite/lib/main.js"
+      },
+      {
+        "name": "sb-exec",
+        "version": "3.1.0",
+        "path": "node_modules/sb-exec/lib/index.js"
+      },
+      {
+        "name": "sb-fs",
+        "version": "3.0.0",
+        "path": "node_modules/sb-fs/lib/index.js"
+      },
+      {
+        "name": "sb-memoize",
+        "version": "1.0.2",
+        "path": "node_modules/sb-memoize/lib/index.js"
+      },
+      {
+        "name": "sb-npm-path",
+        "version": "2.0.0",
+        "path": "node_modules/sb-npm-path/lib/index.js"
+      },
+      {
+        "name": "sb-promisify",
+        "version": "2.0.2",
+        "path": "node_modules/sb-promisify/lib/index.js"
+      },
+      {
+        "name": "semver",
+        "version": "5.3.0",
+        "path": "node_modules/semver/semver.js"
+      },
+      {
+        "name": "strip-bom-buf",
+        "version": "1.0.0",
+        "path": "node_modules/strip-bom-buf/index.js"
+      },
+      {
+        "name": "tmp",
+        "version": "0.0.31",
+        "path": "node_modules/tmp/lib/tmp.js"
+      }
+    ],
+    "extensions": {
+      ".js": [
+        "lib/index.js",
+        "node_modules/atom-linter/lib/helpers.js",
+        "node_modules/atom-linter/lib/index.js",
+        "node_modules/atom-linter/lib/types.js",
+        "node_modules/atom-package-deps/lib/helpers.js",
+        "node_modules/atom-package-deps/lib/index.js",
+        "node_modules/atom-package-deps/lib/types.js",
+        "node_modules/atom-package-deps/lib/view.js",
+        "node_modules/atom-package-path/lib/index.js",
+        "node_modules/consistent-env/decls/jasmine.js",
+        "node_modules/consistent-env/lib/helpers.js",
+        "node_modules/consistent-env/lib/index.js",
+        "node_modules/is-utf8/is-utf8.js",
+        "node_modules/lodash.uniq/index.js",
+        "node_modules/named-js-regexp/lib/named-js-regexp.js",
+        "node_modules/os-tmpdir/index.js",
+        "node_modules/sb-callsite/lib/main.js",
+        "node_modules/sb-exec/decls/jasmine.js",
+        "node_modules/sb-exec/lib/helpers.js",
+        "node_modules/sb-exec/lib/index.js",
+        "node_modules/sb-exec/lib/types.js",
+        "node_modules/sb-fs/lib/index.js",
+        "node_modules/sb-memoize/lib/index.js",
+        "node_modules/sb-npm-path/decls/jasmine.js",
+        "node_modules/sb-npm-path/lib/helpers.js",
+        "node_modules/sb-npm-path/lib/index.js",
+        "node_modules/sb-promisify/lib/index.js",
+        "node_modules/semver/semver.js",
+        "node_modules/strip-bom-buf/index.js",
+        "node_modules/tmp/lib/tmp.js"
+      ],
+      ".json": [
+        "node_modules/atom-linter/.eslintrc.json",
+        "node_modules/atom-linter/package.json",
+        "node_modules/atom-package-deps/.eslintrc.json",
+        "node_modules/atom-package-deps/package.json",
+        "node_modules/atom-package-path/package.json",
+        "node_modules/consistent-env/.eslintrc.json",
+        "node_modules/consistent-env/package.json",
+        "node_modules/is-utf8/package.json",
+        "node_modules/lodash.uniq/package.json",
+        "node_modules/named-js-regexp/package.json",
+        "node_modules/os-tmpdir/package.json",
+        "node_modules/sb-callsite/package.json",
+        "node_modules/sb-exec/.eslintrc.json",
+        "node_modules/sb-exec/package.json",
+        "node_modules/sb-fs/package.json",
+        "node_modules/sb-memoize/.eslintrc.json",
+        "node_modules/sb-memoize/package.json",
+        "node_modules/sb-npm-path/.eslintrc.json",
+        "node_modules/sb-npm-path/package.json",
+        "node_modules/sb-promisify/package.json",
+        "node_modules/semver/package.json",
+        "node_modules/strip-bom-buf/package.json",
+        "node_modules/tmp/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "",
+          "spec"
+        ],
+        "dependencies": {
+          "atom-linter": "^9.0.0",
+          "atom-package-deps": "^4.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-linter",
+          "node_modules/atom-linter/lib"
+        ],
+        "dependencies": {
+          "named-js-regexp": "^1.3.1",
+          "sb-exec": "^3.1.0",
+          "sb-promisify": "^2.0.1",
+          "tmp": "~0.0.28"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-package-deps",
+          "node_modules/atom-package-deps/lib"
+        ],
+        "dependencies": {
+          "atom-package-path": "^1.1.0",
+          "sb-exec": "^3.0.1",
+          "sb-fs": "^3.0.0",
+          "semver": "^5.3.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-package-path/lib",
+          "node_modules/atom-package-path",
+          "node_modules/atom-package-path/spec"
+        ],
+        "dependencies": {
+          "sb-callsite": "^1.1.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/consistent-env",
+          "node_modules/consistent-env/decls",
+          "node_modules/consistent-env/lib"
+        ],
+        "dependencies": {
+          "lodash.uniq": "^4.5.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/sb-exec",
+          "node_modules/sb-exec/decls",
+          "node_modules/sb-exec/lib"
+        ],
+        "dependencies": {
+          "consistent-env": "^1.2.0",
+          "lodash.uniq": "^4.5.0",
+          "sb-npm-path": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/sb-fs/lib",
+          "node_modules/sb-fs"
+        ],
+        "dependencies": {
+          "sb-promisify": "^2.0.1",
+          "strip-bom-buf": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/sb-npm-path",
+          "node_modules/sb-npm-path/decls",
+          "node_modules/sb-npm-path/lib"
+        ],
+        "dependencies": {
+          "sb-memoize": "^1.0.2",
+          "sb-promisify": "^2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/strip-bom-buf"
+        ],
+        "dependencies": {
+          "is-utf8": "^0.2.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/tmp/lib",
+          "node_modules/tmp"
+        ],
+        "dependencies": {
+          "os-tmpdir": "~1.0.1"
+        }
+      }
+    ]
+  }
+}

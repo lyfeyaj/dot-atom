@@ -1,0 +1,105 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17023-16fp930.kdpywg66r/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17023-16fp930.kdpywg66r/package.tgz",
+        "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17023-16fp930.kdpywg66r/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117916-17023-g1okjs.42i4jqncdi"
+    ]
+  ],
+  "_from": "../d-117916-17023-16fp930.kdpywg66r/package.tgz",
+  "_id": "linter-js-yaml@1.2.8",
+  "_inCache": true,
+  "_location": "/linter-js-yaml",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17023-16fp930.kdpywg66r/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17023-16fp930.kdpywg66r/package.tgz",
+    "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17023-16fp930.kdpywg66r/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117916-17023-16fp930.kdpywg66r/package.tgz",
+  "_shasum": "25d4ad847a7a59179d7fc13cca120f73e296338a",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17023-16fp930.kdpywg66r/package.tgz",
+  "_where": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117916-17023-g1okjs.42i4jqncdi",
+  "activationHooks": [
+    "language-yaml:grammar-used"
+  ],
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-js-yaml/issues"
+  },
+  "dependencies": {
+    "atom-linter": "^10.0.0",
+    "atom-package-deps": "^4.0.1",
+    "js-yaml": "^3.10.0"
+  },
+  "description": "Linter plugin for YAML, using js-yaml",
+  "devDependencies": {
+    "eslint": "^4.6.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jasmine-fix": "^1.3.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "env": {
+      "node": true
+    },
+    "globals": {
+      "atom": true
+    }
+  },
+  "homepage": "https://github.com/AtomLinter/linter-js-yaml",
+  "license": "MIT",
+  "main": "./lib/linter-js-yaml.js",
+  "name": "linter-js-yaml",
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "# linter-js-yaml\n\nThis package will parse your YAML files in Atom through\n[js-yaml](https://github.com/connec/yaml-js), exposing any issues reported.\n\n#### Installation\n\n```\n$ apm install linter-js-yaml\n```\n\n#### Settings\n\nYou can configure linter-js-yaml by editing ~/.atom/config.cson (choose Open Your Config in Atom menu) or in Preferences:\n\n```cson\n'linter-js-yaml':\n  'customTags': [\n    \"!yaml\"\n    \"!include\"\n  ]\n```\n\n* `customTags`: List of YAML custom tags. (Default: scalar)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-js-yaml.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "version": "1.2.8"
+}

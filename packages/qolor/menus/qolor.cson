@@ -1,0 +1,23 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus
+
+'context-menu':
+    'atom-text-editor': [
+        {
+            'label': 'Toggle qolor'
+            'command': 'qolor:toggle'
+        }
+    ]
+'menu': [
+    {
+        'label': 'Packages'
+        'submenu': [
+            'label': 'Qolor'
+            'submenu': [
+                {
+                    'label': 'Toggle'
+                    'command': 'qolor:toggle'
+                }
+            ]
+        ]
+    }
+]

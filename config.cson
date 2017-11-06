@@ -1,0 +1,182 @@
+"*":
+  Zen: {}
+  "atom-alignment": {}
+  "atom-beautify":
+    general:
+      _analyticsUserId: "53c59bcf-22d6-46d4-8163-512c74be306b"
+      analytics: false
+    html:
+      end_with_newline: true
+    js:
+      end_with_newline: true
+  "atom-clock":
+    showClockIcon: true
+    showTooltip: true
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
+    buildTimeout: 60000
+    cmdArgs: "--exclude=node_modules/* --exclude=bower_components/* --exclude=logs/* --exclude=log/*"
+  "atom-lint": {}
+  "atom-material-ui":
+    colors:
+      abaseColor: "#7e57c2"
+      accentColor: "#b0e457"
+      predefinedColor: "Purple"
+    fonts:
+      fontSize: 15
+    panelContrast: false
+    tabs:
+      compactTabs: true
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "atom-ternjs":
+    useSnippets: true
+  "autoclose-html": {}
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-js-import":
+    fuzzy:
+      enabled: true
+  "autocomplete-paths":
+    maxFileCount: 10000
+  "autocomplete-plus":
+    minimumWordLength: 2
+  "autocomplete-ruby":
+    rsensePath: "~/.rvm/gems/ruby-2.2.1/bin/rsense"
+  core:
+    audioBeep: false
+    closeEmptyWindows: false
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "feedback"
+      "metrics"
+      "linter-csslint"
+      "linter-scss-lint"
+      "linter-htmlhint"
+      "busy-signal"
+      "git-time-machine"
+      "intentions"
+      "linter-xmllint"
+      "prettier-atom"
+      "exception-reporting"
+      "github"
+      "language-csharp"
+      "open-on-github"
+      "language-toml"
+      "language-clojure"
+      "background-tips"
+      "atom-ternjs"
+    ]
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+      "node_modules"
+      "bower_components"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "one-dark-syntax"
+    ]
+  editor:
+    backUpBeforeSaving: true
+    fontFamily: "Monaco"
+    fontSize: 13
+    invisibles: {}
+    scrollSensitivity: 160
+    showIndentGuide: true
+    showInvisibles: true
+  emmet: {}
+  "exception-reporting":
+    userId: "09043a2a-e7f5-5c96-564c-ee2c2a24188a"
+  "file-icons": {}
+  "git-plus":
+    general:
+      _analyticsUserId: "cc0d3560-d2ad-4e04-855d-58d710d60c5c"
+  "isotope-ui": {}
+  jshint:
+    supportLintingJsx: true
+  "language-babel": {}
+  linter: {}
+  "linter-csslint": {}
+  "linter-erb": {}
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+    globalNodePath: "/Users/fl/.nvm/versions/node/v4.2.6"
+    lintHtmlFiles: true
+    useGlobalEslint: true
+  "linter-htmlhint": {}
+  "linter-javac": {}
+  "linter-jscs":
+    esnext: true
+  "linter-jshint":
+    lintInlineJavaScript: true
+    lintJSXFiles: true
+  "linter-jsxhint":
+    harmony: true
+    jsxhintExecutablePath: "/Users/fl/.nvm/versions/node/v4.2.6/bin/jsxhint"
+  "linter-rubocop":
+    command: "/Users/fl/.rvm/gems/ruby-2.2.1/bin/rubocop"
+  "linter-ruby": {}
+  "linter-scss-lint": {}
+  "linter-ui-default":
+    panelHeight: 69
+  "linter-write-good":
+    severityLevel: "Info"
+  "markdown-pdf": {}
+  "markdown-preview":
+    grammars: [
+      "source.gfm"
+      "source.litcoffee"
+      "text.plain"
+      "text.plain.null-grammar"
+    ]
+  "merge-conflicts": {}
+  metrics:
+    userId: "1862a89e1709b2b13c33ffd078e01a2815b6623f"
+  minimap:
+    autoToggle: true
+    scrollAnimation: true
+  "nord-atom-ui":
+    tabSizing: false
+  "one-dark-ui":
+    fontSize: 12
+  pigments: {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      showInStatusBar: true
+    prettierEslintOptions: {}
+    prettierOptions:
+      singleQuote: true
+    useEslint: true
+  react: {}
+  "release-notes":
+    viewedVersion: "0.89.0"
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  "status-bar": {}
+  tabs: {}
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".babel.regexp.source":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
+".coffee.jsx.source":
+  editor:
+    autoIndentOnPaste: true
+".js.jsx.source":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: false

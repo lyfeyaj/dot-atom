@@ -1,0 +1,406 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117516-12399-1vq064m.0vtiifi529/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117516-12399-1vq064m.0vtiifi529/package.tgz",
+        "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117516-12399-1vq064m.0vtiifi529/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117516-12399-hpaju0.97n2d9rudi"
+    ]
+  ],
+  "_from": "../d-117516-12399-1vq064m.0vtiifi529/package.tgz",
+  "_id": "linter-xmllint@1.4.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/linter-xmllint",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117516-12399-1vq064m.0vtiifi529/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117516-12399-1vq064m.0vtiifi529/package.tgz",
+    "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117516-12399-1vq064m.0vtiifi529/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117516-12399-1vq064m.0vtiifi529/package.tgz",
+  "_shasum": "7f61547c181d1c5661be02ae5764adbc06b68ef1",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117516-12399-1vq064m.0vtiifi529/package.tgz",
+  "_where": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117516-12399-hpaju0.97n2d9rudi",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-xmllint/issues"
+  },
+  "dependencies": {
+    "atom-linter": "^10.0.0",
+    "atom-package-deps": "^4.6.0",
+    "sax": "^1.1.4",
+    "xmldoc": "^1.0.0",
+    "xregexp": "^3.1.0"
+  },
+  "description": "Lint XML on the fly, using xmllint",
+  "devDependencies": {
+    "coffeelint": "^1.13.1"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/AtomLinter/linter-xmllint#readme",
+  "license": "MIT",
+  "main": "./lib/init",
+  "name": "linter-xmllint",
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter:2.0.0"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "# linter-xmllint\n\n[![Build Status](https://img.shields.io/travis/AtomLinter/linter-xmllint.svg)](https://travis-ci.org/AtomLinter/linter-xmllint)\n[![Plugin installs!](https://img.shields.io/apm/dm/linter-xmllint.svg)](https://atom.io/packages/linter-xmllint)\n[![Package version!](https://img.shields.io/apm/v/linter-xmllint.svg)](https://atom.io/packages/linter-xmllint)\n[![Dependencies!](https://img.shields.io/david/AtomLinter/linter-xmllint.svg)](https://david-dm.org/AtomLinter/linter-xmllint)\n\n> xmllint - The xmllint program parses XML files. It is useful for detecting errors XML code. See [xmlsoft.org/xmllint.html](http://xmlsoft.org/xmllint.html) for more informations about xmllint.\n\nThis package will lint your opened `.xml` files in Atom through [xmllint linter](http://xmlsoft.org/xmllint.html).\n\nThe [changelog](https://github.com/AtomLinter/linter-xmllint/blob/master/CHANGELOG.md) lists the changes for each release.\n\n## Linter installation\n\nBefore using this package, you must ensure that `xmllint` is installed on your system. On recent versions of Mac OS X, `xmllint` comes pre-installed. To install `xmllint` on other platforms, do the following:\n\n- On Linux:\n\n  ```text\n  [sudo] apt-get install libxml2-utils\n  ```\n\n- On Windows, the current binary distribution is managed by Igor Zlatkovic ([here](https://www.zlatkovic.com/libxml.en.html \"Igor Zlatkovic\")) and there were some known issues with version 2.9.3 (20903) x86_64.\n  The validation messages did not contain the filename and would not work with this plugin.\n  The instructions below use the 2.7.8 (20708) x86 binary.\n\n  1. Pick a location where to store the required files, e.g. `C:\\tools\\xmllint`.\n\n  1. Browse to ftp://ftp.zlatkovic.com/libxml/ to get the needed files.\n    If the versions are no longer available at root check the [oldreleases](ftp://ftp.zlatkovic.com/libxml/oldreleases/ \"Old Releases\") folder.\n\n  1. Download the following files:\n\n    - `iconv-1.9.2.win32.zip`\n    - `libxml2-2.7.8.win32.zip`\n    - `libxslt-1.1.26.win32.zip`\n    - `zlib-1.2.5.win32.zip`\n\n  1. Extract all the files into the location we created in the first step.\n    Example of extracted structure:\n\n    ```text\n    C:\\tools\\xmllint\\\n    - bin\n    - include\n    - lib\n    - share\n    ```\n\n  1. Add the `bin` directory to your path, e.g. `C:\\tools\\xmllint\\bin` by calling\n\n    - `setx path %PATH%;C:\\tools\\xmllint\\bin`\n    - This is a CLI command that will attempt to add it to your path, if your path is really long it will fail and you will have to do it manually through windows.\n      Use quotes if your path has spaces.\n\n  1. Open a new command prompt and try the command `xmllint --version` to see if it worked.\n    If it worked you will see the version be (20708).\n\n## Installation\n\n- `$ apm install linter-xmllint`\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-xmllint.git"
+  },
+  "scripts": {
+    "lint": "coffeelint lib spec"
+  },
+  "version": "1.4.3",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "atom-linter",
+        "version": "10.0.0",
+        "path": "node_modules/atom-linter/lib/index.js"
+      },
+      {
+        "name": "atom-package-deps",
+        "version": "4.6.0",
+        "path": "node_modules/atom-package-deps/lib/index.js"
+      },
+      {
+        "name": "sb-exec",
+        "version": "3.1.0",
+        "path": "node_modules/atom-package-deps/node_modules/sb-exec/lib/index.js"
+      },
+      {
+        "name": "atom-package-path",
+        "version": "1.1.0",
+        "path": "node_modules/atom-package-path/lib/index.js"
+      },
+      {
+        "name": "consistent-env",
+        "version": "1.3.1",
+        "path": "node_modules/consistent-env/lib/index.js"
+      },
+      {
+        "name": "is-utf8",
+        "version": "0.2.1",
+        "path": "node_modules/is-utf8/is-utf8.js"
+      },
+      {
+        "name": "lodash.uniq",
+        "version": "4.5.0",
+        "path": "node_modules/lodash.uniq/index.js"
+      },
+      {
+        "name": "named-js-regexp",
+        "version": "1.3.2",
+        "path": "node_modules/named-js-regexp/lib/named-js-regexp.js"
+      },
+      {
+        "name": "os-tmpdir",
+        "version": "1.0.2",
+        "path": "node_modules/os-tmpdir/index.js"
+      },
+      {
+        "name": "sax",
+        "version": "1.2.2",
+        "path": "node_modules/sax/lib/sax.js"
+      },
+      {
+        "name": "sb-callsite",
+        "version": "1.1.2",
+        "path": "node_modules/sb-callsite/lib/main.js"
+      },
+      {
+        "name": "sb-exec",
+        "version": "4.0.0",
+        "path": "node_modules/sb-exec/lib/index.js"
+      },
+      {
+        "name": "sb-fs",
+        "version": "3.0.0",
+        "path": "node_modules/sb-fs/lib/index.js"
+      },
+      {
+        "name": "sb-memoize",
+        "version": "1.0.2",
+        "path": "node_modules/sb-memoize/lib/index.js"
+      },
+      {
+        "name": "sb-npm-path",
+        "version": "2.0.0",
+        "path": "node_modules/sb-npm-path/lib/index.js"
+      },
+      {
+        "name": "sb-promisify",
+        "version": "2.0.2",
+        "path": "node_modules/sb-promisify/lib/index.js"
+      },
+      {
+        "name": "semver",
+        "version": "5.3.0",
+        "path": "node_modules/semver/semver.js"
+      },
+      {
+        "name": "strip-bom-buf",
+        "version": "1.0.0",
+        "path": "node_modules/strip-bom-buf/index.js"
+      },
+      {
+        "name": "tmp",
+        "version": "0.0.31",
+        "path": "node_modules/tmp/lib/tmp.js"
+      },
+      {
+        "name": "xmldoc",
+        "version": "1.1.0",
+        "path": "node_modules/xmldoc/index.js"
+      },
+      {
+        "name": "xregexp",
+        "version": "3.2.0",
+        "path": "node_modules/xregexp/xregexp-all.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        "coffeelint.json",
+        "node_modules/atom-linter/.eslintrc.json",
+        "node_modules/atom-linter/package.json",
+        "node_modules/atom-package-deps/.eslintrc.json",
+        "node_modules/atom-package-deps/node_modules/sb-exec/.eslintrc.json",
+        "node_modules/atom-package-deps/node_modules/sb-exec/package.json",
+        "node_modules/atom-package-deps/package.json",
+        "node_modules/atom-package-path/package.json",
+        "node_modules/consistent-env/.eslintrc.json",
+        "node_modules/consistent-env/package.json",
+        "node_modules/is-utf8/package.json",
+        "node_modules/lodash.uniq/package.json",
+        "node_modules/named-js-regexp/package.json",
+        "node_modules/os-tmpdir/package.json",
+        "node_modules/sax/package.json",
+        "node_modules/sb-callsite/package.json",
+        "node_modules/sb-exec/.eslintrc.json",
+        "node_modules/sb-exec/package.json",
+        "node_modules/sb-fs/package.json",
+        "node_modules/sb-memoize/.eslintrc.json",
+        "node_modules/sb-memoize/package.json",
+        "node_modules/sb-npm-path/.eslintrc.json",
+        "node_modules/sb-npm-path/package.json",
+        "node_modules/sb-promisify/package.json",
+        "node_modules/semver/package.json",
+        "node_modules/strip-bom-buf/package.json",
+        "node_modules/tmp/package.json",
+        "node_modules/xmldoc/package.json",
+        "node_modules/xregexp/package.json",
+        "package.json"
+      ],
+      ".coffee": [
+        "lib/init.coffee"
+      ],
+      ".js": [
+        "node_modules/atom-linter/lib/helpers.js",
+        "node_modules/atom-linter/lib/index.js",
+        "node_modules/atom-linter/lib/types.js",
+        "node_modules/atom-package-deps/lib/helpers.js",
+        "node_modules/atom-package-deps/lib/index.js",
+        "node_modules/atom-package-deps/lib/types.js",
+        "node_modules/atom-package-deps/lib/view.js",
+        "node_modules/atom-package-deps/node_modules/sb-exec/decls/jasmine.js",
+        "node_modules/atom-package-deps/node_modules/sb-exec/lib/helpers.js",
+        "node_modules/atom-package-deps/node_modules/sb-exec/lib/index.js",
+        "node_modules/atom-package-deps/node_modules/sb-exec/lib/types.js",
+        "node_modules/atom-package-path/lib/index.js",
+        "node_modules/consistent-env/lib/helpers.js",
+        "node_modules/consistent-env/lib/index.js",
+        "node_modules/is-utf8/is-utf8.js",
+        "node_modules/lodash.uniq/index.js",
+        "node_modules/named-js-regexp/lib/named-js-regexp.js",
+        "node_modules/os-tmpdir/index.js",
+        "node_modules/sax/lib/sax.js",
+        "node_modules/sb-callsite/lib/main.js",
+        "node_modules/sb-exec/lib/helpers.js",
+        "node_modules/sb-exec/lib/index.js",
+        "node_modules/sb-exec/lib/types.js",
+        "node_modules/sb-fs/lib/index.js",
+        "node_modules/sb-memoize/lib/index.js",
+        "node_modules/sb-npm-path/decls/jasmine.js",
+        "node_modules/sb-npm-path/lib/helpers.js",
+        "node_modules/sb-npm-path/lib/index.js",
+        "node_modules/sb-promisify/lib/index.js",
+        "node_modules/semver/semver.js",
+        "node_modules/strip-bom-buf/index.js",
+        "node_modules/tmp/lib/tmp.js",
+        "node_modules/xmldoc/examples/example.js",
+        "node_modules/xmldoc/index.js",
+        "node_modules/xmldoc/lib/xmldoc.js",
+        "node_modules/xregexp/src/addons/build.js",
+        "node_modules/xregexp/src/addons/matchrecursive.js",
+        "node_modules/xregexp/src/addons/unicode-base.js",
+        "node_modules/xregexp/src/addons/unicode-blocks.js",
+        "node_modules/xregexp/src/addons/unicode-categories.js",
+        "node_modules/xregexp/src/addons/unicode-properties.js",
+        "node_modules/xregexp/src/addons/unicode-scripts.js",
+        "node_modules/xregexp/src/index.js",
+        "node_modules/xregexp/src/xregexp.js",
+        "node_modules/xregexp/xregexp-all.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib",
+          "spec"
+        ],
+        "dependencies": {
+          "atom-linter": "^10.0.0",
+          "atom-package-deps": "^4.6.0",
+          "sax": "^1.1.4",
+          "xmldoc": "^1.0.0",
+          "xregexp": "^3.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-linter",
+          "node_modules/atom-linter/lib"
+        ],
+        "dependencies": {
+          "named-js-regexp": "^1.3.1",
+          "sb-exec": "^4.0.0",
+          "sb-promisify": "^2.0.1",
+          "tmp": "~0.0.28"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-package-deps",
+          "node_modules/atom-package-deps/lib"
+        ],
+        "dependencies": {
+          "atom-package-path": "^1.1.0",
+          "sb-exec": "^3.0.1",
+          "sb-fs": "^3.0.0",
+          "semver": "^5.3.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-package-deps/node_modules/sb-exec",
+          "node_modules/atom-package-deps/node_modules/sb-exec/decls",
+          "node_modules/atom-package-deps/node_modules/sb-exec/lib"
+        ],
+        "dependencies": {
+          "consistent-env": "^1.2.0",
+          "lodash.uniq": "^4.5.0",
+          "sb-npm-path": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-package-path/lib",
+          "node_modules/atom-package-path",
+          "node_modules/atom-package-path/spec"
+        ],
+        "dependencies": {
+          "sb-callsite": "^1.1.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/consistent-env",
+          "node_modules/consistent-env/lib"
+        ],
+        "dependencies": {
+          "lodash.uniq": "^4.5.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/sb-exec",
+          "node_modules/sb-exec/lib"
+        ],
+        "dependencies": {
+          "consistent-env": "^1.2.0",
+          "lodash.uniq": "^4.5.0",
+          "sb-npm-path": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/sb-fs/lib",
+          "node_modules/sb-fs"
+        ],
+        "dependencies": {
+          "sb-promisify": "^2.0.1",
+          "strip-bom-buf": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/sb-npm-path",
+          "node_modules/sb-npm-path/decls",
+          "node_modules/sb-npm-path/lib"
+        ],
+        "dependencies": {
+          "sb-memoize": "^1.0.2",
+          "sb-promisify": "^2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/strip-bom-buf"
+        ],
+        "dependencies": {
+          "is-utf8": "^0.2.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/tmp/lib",
+          "node_modules/tmp"
+        ],
+        "dependencies": {
+          "os-tmpdir": "~1.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/xmldoc/examples",
+          "node_modules/xmldoc",
+          "node_modules/xmldoc/lib",
+          "node_modules/xmldoc/test"
+        ],
+        "dependencies": {
+          "sax": "^1.2.1"
+        }
+      }
+    ]
+  }
+}

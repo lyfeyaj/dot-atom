@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-116813-12567-wv5ocl/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-116813-12567-wv5ocl/package.tgz",
+        "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-116813-12567-wv5ocl/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-116813-12567-z1amgq"
+    ]
+  ],
+  "_from": "../d-116813-12567-wv5ocl/package.tgz",
+  "_id": "atom-transpose@0.3.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/atom-transpose",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-116813-12567-wv5ocl/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-116813-12567-wv5ocl/package.tgz",
+    "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-116813-12567-wv5ocl/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116813-12567-wv5ocl/package.tgz",
+  "_shasum": "f379b2c6a6a79565da3dc47cf941cd9be63ae6e2",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-116813-12567-wv5ocl/package.tgz",
+  "_where": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-116813-12567-z1amgq",
+  "activationCommands": {
+    "atom-workspace": "atom-transpose:transpose"
+  },
+  "bugs": {
+    "url": "https://github.com/lyfeyaj/atom-transpose/issues"
+  },
+  "dependencies": {},
+  "description": "Transpose your text. Behave transpose action like Sublime Text 2/3.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/lyfeyaj/atom-transpose#readme",
+  "license": "MIT",
+  "main": "./lib/atom-transpose",
+  "name": "atom-transpose",
+  "optionalDependencies": {},
+  "readme": "Atom Transpose\n==============\n\nTranspose your text. Behave transpose action like Sublime Text 2/3.\n\n#### Usage\n\nRun `alt-t` or `ctrl-shift-t` to transpose your texts.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyfeyaj/atom-transpose.git"
+  },
+  "version": "0.3.4"
+}

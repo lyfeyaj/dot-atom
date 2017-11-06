@@ -1,0 +1,24 @@
+### Project specific config ###
+environment:
+  ruby_version: "22-x64"
+
+before_build:
+  - SET PATH=C:\Ruby%ruby_version%\bin;%PATH%
+  - ruby --version
+  - erb --version
+
+### Generic setup follows ###
+build_script:
+  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/atom/ci/master/build-package.ps1'))
+
+branches:
+  only:
+    - master
+    - /^greenkeeper/.*$/
+
+version: "{build}"
+platform: x64
+clone_depth: 10
+skip_tags: true
+test: off
+deploy: off

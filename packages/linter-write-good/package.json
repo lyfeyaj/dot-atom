@@ -1,0 +1,249 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94588-1tvarrn.tsul0izfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94588-1tvarrn.tsul0izfr/package.tgz",
+        "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94588-1tvarrn.tsul0izfr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117422-94588-jly6bg.djmf672e29"
+    ]
+  ],
+  "_from": "../d-117422-94588-1tvarrn.tsul0izfr/package.tgz",
+  "_id": "linter-write-good@0.9.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/linter-write-good",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94588-1tvarrn.tsul0izfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94588-1tvarrn.tsul0izfr/package.tgz",
+    "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94588-1tvarrn.tsul0izfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117422-94588-1tvarrn.tsul0izfr/package.tgz",
+  "_shasum": "afe974d4391d0d37589c915d9c66ce2976b80fc5",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117422-94588-1tvarrn.tsul0izfr/package.tgz",
+  "_where": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117422-94588-jly6bg.djmf672e29",
+  "activationCommands": [],
+  "bugs": {
+    "url": "https://github.com/gepoch/linter-write-good/issues"
+  },
+  "dependencies": {
+    "write-good": "~0.10.0",
+    "xregexp": "~2.0.0"
+  },
+  "description": "Naive linter for English prose for developers who can't write good and wanna learn to do other stuff good too.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/gepoch/linter-write-good#readme",
+  "license": "MIT",
+  "main": "./lib/init",
+  "name": "linter-write-good",
+  "optionalDependencies": {},
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "# linter-write-good\n\nNaive linter for English prose for developers who can't write good and wanna\nlearn to do other stuff good too.\n\nA Linter interface for the [write-good](https://github.com/btford/write-good)\nlibrary.\n\nThis provides a variety of english usage text tips when writing documentation\nand commit messages.\n\nThis package requires [Linter](https://github.com/AtomLinter/Linter).\n\n[See it on atom.io](https://atom.io/packages/linter-write-good)\n\n[See it on github.com](https://github.com/gepoch/linter-write-good)\n\n![](https://raw.github.com/gepoch/linter-write-good/master/screenshot.png)\n\n## Configuration\n\nIn the package settings, you can use a custom node binary, a custom write-good\nscript, and pass arguments to the write good command. See\n[write-good](https://github.com/btford/write-good) for possible arguments to the\ncommand.\n\nMoreover, you can set the **severity level** of this linter. The default level\nis **Error**. Setting the severity level to **Warning** or **Info** helps\ndistinguish *write-good* highlighting from the highlighting of an ordinary spell\nchecker, or higher priority linters.\n\n### Note: Additional Linting\n\n#### E-Prime\n\nThe Write-Good library implements a linter for\n[E-Prime](https://github.com/btford/write-good/issues/70) which is off by\ndefault. To enable E-Prime linting, you'll need to add the `--yes-eprime` flag\nto the extra arguments input under this package's settings page.\n\n![](https://raw.github.com/gepoch/linter-write-good/master/flags.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gepoch/linter-write-good.git"
+  },
+  "version": "0.9.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "adverb-where",
+        "version": "0.0.9",
+        "path": "node_modules/adverb-where/adverbs.js"
+      },
+      {
+        "name": "define-properties",
+        "version": "1.1.2",
+        "path": "node_modules/define-properties/index.js"
+      },
+      {
+        "name": "e-prime",
+        "version": "0.10.1",
+        "path": "node_modules/e-prime/e-prime.js"
+      },
+      {
+        "name": "foreach",
+        "version": "2.0.5",
+        "path": "node_modules/foreach/index.js"
+      },
+      {
+        "name": "function-bind",
+        "version": "1.1.0",
+        "path": "node_modules/function-bind/index.js"
+      },
+      {
+        "name": "no-cliches",
+        "version": "0.1.0",
+        "path": "node_modules/no-cliches/cliches.js"
+      },
+      {
+        "name": "object-keys",
+        "version": "1.0.11",
+        "path": "node_modules/object-keys/index.js"
+      },
+      {
+        "name": "object.assign",
+        "version": "4.0.4",
+        "path": "node_modules/object.assign/index.js"
+      },
+      {
+        "name": "passive-voice",
+        "version": "0.0.1",
+        "path": "node_modules/passive-voice/passive.js"
+      },
+      {
+        "name": "too-wordy",
+        "version": "0.1.4",
+        "path": "node_modules/too-wordy/too-wordy.js"
+      },
+      {
+        "name": "weasel-words",
+        "version": "0.1.1",
+        "path": "node_modules/weasel-words/weasel.js"
+      },
+      {
+        "name": "write-good",
+        "version": "0.10.3",
+        "path": "node_modules/write-good/write-good.js"
+      },
+      {
+        "name": "xregexp",
+        "version": "2.0.0",
+        "path": "node_modules/xregexp/xregexp-all.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/init.coffee"
+      ],
+      ".js": [
+        "node_modules/adverb-where/adverbs.js",
+        "node_modules/adverb-where/matcher.js",
+        "node_modules/define-properties/index.js",
+        "node_modules/e-prime/e-prime.js",
+        "node_modules/foreach/index.js",
+        "node_modules/foreach/test.js",
+        "node_modules/function-bind/implementation.js",
+        "node_modules/function-bind/index.js",
+        "node_modules/no-cliches/cliches.js",
+        "node_modules/no-cliches/matcher.js",
+        "node_modules/object-keys/index.js",
+        "node_modules/object-keys/isArguments.js",
+        "node_modules/object.assign/dist/browser.js",
+        "node_modules/object.assign/hasSymbols.js",
+        "node_modules/object.assign/implementation.js",
+        "node_modules/object.assign/index.js",
+        "node_modules/object.assign/polyfill.js",
+        "node_modules/object.assign/shim.js",
+        "node_modules/passive-voice/passive.js",
+        "node_modules/too-wordy/matcher.js",
+        "node_modules/too-wordy/too-wordy.js",
+        "node_modules/weasel-words/weasel.js",
+        "node_modules/write-good/bin/write-good.js",
+        "node_modules/write-good/lib/annotate.js",
+        "node_modules/write-good/lib/lexical-illusions.js",
+        "node_modules/write-good/lib/starts-with-so.js",
+        "node_modules/write-good/lib/there-is.js",
+        "node_modules/write-good/write-good.js",
+        "node_modules/xregexp/xregexp-all.js"
+      ],
+      ".json": [
+        "node_modules/adverb-where/package.json",
+        "node_modules/define-properties/.jscs.json",
+        "node_modules/define-properties/package.json",
+        "node_modules/e-prime/package.json",
+        "node_modules/foreach/component.json",
+        "node_modules/foreach/package.json",
+        "node_modules/function-bind/.jscs.json",
+        "node_modules/function-bind/package.json",
+        "node_modules/no-cliches/package.json",
+        "node_modules/object-keys/.jscs.json",
+        "node_modules/object-keys/package.json",
+        "node_modules/object.assign/package.json",
+        "node_modules/passive-voice/package.json",
+        "node_modules/too-wordy/package.json",
+        "node_modules/weasel-words/package.json",
+        "node_modules/write-good/package.json",
+        "node_modules/xregexp/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "write-good": "~0.10.0",
+          "xregexp": "~2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/define-properties",
+          "node_modules/define-properties/test"
+        ],
+        "dependencies": {
+          "foreach": "^2.0.5",
+          "object-keys": "^1.0.8"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/object.assign/dist",
+          "node_modules/object.assign",
+          "node_modules/object.assign/test",
+          "node_modules/object.assign/test/shams"
+        ],
+        "dependencies": {
+          "define-properties": "^1.1.2",
+          "function-bind": "^1.1.0",
+          "object-keys": "^1.0.10"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/write-good/bin",
+          "node_modules/write-good/lib",
+          "node_modules/write-good",
+          "node_modules/write-good/test"
+        ],
+        "dependencies": {
+          "adverb-where": "~0.0.0",
+          "e-prime": "~0.10.0",
+          "no-cliches": "~0.1.0",
+          "object.assign": "^4.0.4",
+          "passive-voice": "~0.0.0",
+          "too-wordy": "~0.1.0",
+          "weasel-words": "~0.1.0"
+        }
+      }
+    ]
+  }
+}
