@@ -1227,6 +1227,15 @@
         { "include": "#literal-arrow-function-labels" },
         { "include": "#literal-arrow-function" },
         { "include": "#literal-method" },
+        {
+          "comment": "arrow function returns some form of expression",
+          "comment": "ends on a object property , serparator or the object terminator }",
+          "begin": "(?<==>)",
+          "end": "(?=\\s*(,|}))",
+          "patterns": [
+            { "include": "#expression"}
+          ]
+        },
         { "include": "#literal-object-prop-shorthand" },
         { "include": "#literal-labels" },
         { "include": "#expression" },
@@ -2321,7 +2330,7 @@
       ]
     },
     "literal-module-typeof": {
-        "match": "\\s*\\b(typeof|type)\\b\\s++(?={|(?:[$_\\p{L}\\p{Nl}]|\\\\u\\h{4}|\\\\u{\\h+}))(?!\\b(instanceof|in|as)\\b|,)",
+        "match": "\\s*\\b(typeof|type)\\b\\s++(?={|\\*|(?:[$_\\p{L}\\p{Nl}]|\\\\u\\h{4}|\\\\u{\\h+}))(?!\\b(instanceof|in|as)\\b|,)",
         "captures": {
           "1": { "name": "keyword.other.typedef.flowtype" }
         }
