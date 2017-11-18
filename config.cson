@@ -16,6 +16,9 @@
     autoBuildTagsWhenActive: true
     buildTimeout: 60000
     cmdArgs: "--exclude=node_modules/* --exclude=bower_components/* --exclude=logs/* --exclude=log/*"
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": false
   "atom-lint": {}
   "atom-material-ui":
     colors:
@@ -69,6 +72,8 @@
       "language-clojure"
       "background-tips"
       "atom-ternjs"
+      "atom-ide-ui"
+      "ide-typescript"
     ]
     ignoredNames: [
       ".git"

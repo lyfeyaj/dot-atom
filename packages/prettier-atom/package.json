@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17035-1755ak.lfy0dg3nmi/package.tgz",
+        "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-1171016-40742-c0p31k.q3dcayvi/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17035-1755ak.lfy0dg3nmi/package.tgz",
-        "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17035-1755ak.lfy0dg3nmi/package.tgz",
+        "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-1171016-40742-c0p31k.q3dcayvi/package.tgz",
+        "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-1171016-40742-c0p31k.q3dcayvi/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117916-17035-jfsk7t.r2uik9"
+      "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-1171016-40742-1yv3mik.wsbhb0529"
     ]
   ],
-  "_from": "../d-117916-17035-1755ak.lfy0dg3nmi/package.tgz",
-  "_id": "prettier-atom@0.40.0",
+  "_from": "../d-1171016-40742-c0p31k.q3dcayvi/package.tgz",
+  "_id": "prettier-atom@0.41.0",
   "_inCache": true,
   "_location": "/prettier-atom",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17035-1755ak.lfy0dg3nmi/package.tgz",
+    "raw": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-1171016-40742-c0p31k.q3dcayvi/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17035-1755ak.lfy0dg3nmi/package.tgz",
-    "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17035-1755ak.lfy0dg3nmi/package.tgz",
+    "rawSpec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-1171016-40742-c0p31k.q3dcayvi/package.tgz",
+    "spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-1171016-40742-c0p31k.q3dcayvi/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-117916-17035-1755ak.lfy0dg3nmi/package.tgz",
-  "_shasum": "28d8e07d2a310ea6a6c5c79cb93bc1061c64e9b2",
+  "_resolved": "file:../d-1171016-40742-c0p31k.q3dcayvi/package.tgz",
+  "_shasum": "2424c5a5407b728e790750355befff3cb221c581",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-117916-17035-1755ak.lfy0dg3nmi/package.tgz",
-  "_where": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-117916-17035-jfsk7t.r2uik9",
+  "_spec": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/d-1171016-40742-c0p31k.q3dcayvi/package.tgz",
+  "_where": "/private/var/folders/h7/jg048y_91f56_8s9kt40djq80000gp/T/apm-install-dir-1171016-40742-1yv3mik.wsbhb0529",
   "bugs": {
     "url": "https://github.com/prettier/prettier-atom/issues"
   },
@@ -60,40 +60,39 @@
     "atom-package-deps": "^4.6.0",
     "atom-text-buffer-point": "^1.0.0",
     "atom-text-buffer-range": "^1.0.0",
-    "editorconfig": "^0.14.1",
-    "ignore": "^3.3.5",
+    "editorconfig": "^0.15.0",
+    "ignore": "^3.3.7",
     "lodash": "^4.17.4",
     "loophole": "^1.1.0",
-    "prettier": "^1.7.0",
-    "prettier-eslint": "^8.1.1",
-    "read-pkg-up": "^2.0.0"
+    "prettier": "^1.8.2",
+    "prettier-eslint": "^8.2.1",
+    "read-pkg-up": "^3.0.0"
   },
   "description": "Atom plugin for formatting JavaScript using prettier with (optional) prettier-eslint integration",
   "devDependencies": {
-    "all-contributors-cli": "^4.4.0",
+    "all-contributors-cli": "^4.8.1",
     "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.0.0",
-    "babel-jest": "^21.0.2",
+    "babel-eslint": "^8.0.2",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
-    "codecov": "^2.3.0",
+    "codecov": "^3.0.0",
     "commitizen": "^2.9.6",
-    "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^4.7.0",
-    "eslint-config-airbnb-base": "^12.0.0",
-    "eslint-config-prettier": "^2.4.0",
-    "eslint-plugin-flowtype": "^2.35.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^21.1.0",
-    "eslint-plugin-prettier": "^2.2.0",
-    "flow-bin": "^0.54.1",
-    "flow-typed": "^2.1.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.3.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "flow-bin": "^0.59.0",
+    "flow-typed": "^2.2.3",
     "husky": "^0.14.3",
-    "jest": "^21.1.0",
+    "jest": "^21.2.1",
     "nps": "^5.7.1",
-    "opt-cli": "^1.5.2",
-    "prettier-eslint-cli": "^4.3.2",
+    "opt-cli": "^1.6.0",
+    "prettier-eslint-cli": "^4.4.0",
     "rimraf": "^2.6.2"
   },
   "homepage": "https://github.com/prettier/prettier-atom",
@@ -138,5 +137,5 @@
     "start": "nps",
     "test": "nps test"
   },
-  "version": "0.40.0"
+  "version": "0.41.0"
 }
